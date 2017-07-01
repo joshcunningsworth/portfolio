@@ -1,0 +1,73 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #B095C7;
+}
+
+body{
+	color: #fff;
+	font-family: 'Roboto', sans-serif !important;
+}
+
+footer{
+    float: bottom;
+    position: fixed;
+}
+
+li:hover{
+    background-color: #B095C7 !important;
+    transition: 0.3s;
+}
+
+nav li{
+    border: 2px solid #222;
+}
+
+.container{
+    text-align: center;
+}
+
+#titlename{
+    margin-top: -3%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    max-height: 650px;
+    padding-bottom: 1%;
+    margin: auto;
+    text-align: center;
+}
+
+.card .container {
+    padding: 0 16px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.fa{
+    padding: 0% 2% 0% 2%;
+}
+
+.drone.col-md-4{
+    padding-bottom: 1.5%;
+}
+
+button{
+    padding-left: 10%;
+    display: inline-block;
+}
