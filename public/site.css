@@ -5,11 +5,12 @@ body,html{
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: #B095C7;
+    /*background-color: #B095C7;*/
+    background-color: white;
 }
 
 body{
-	color: #fff;
+	color: black;
 	font-family: 'Roboto', sans-serif !important;
 }
 
@@ -27,36 +28,78 @@ nav li{
     border: 2px solid #222;
 }
 
-.container{
+.headcontainer{
+    padding: 0 0 0 5%;
+    text-align: left;
+}
+
+.bodycontainer{
     text-align: center;
+}
+
+#option1{
+    margin: 5%;
+}
+
+#option2{
+    margin: 5%;
+}
+
+#option3{
+    margin: 5%;
 }
 
 #titlename{
     margin-top: -3%;
+    color: black;
+}
+
+strong{
+    color: black;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 325px;
     max-height: 650px;
     padding-bottom: 1%;
     margin: auto;
     text-align: center;
 }
 
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
 .card .container {
+    padding: 0 16px;
+}
+
+.homecard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 225px;
+    max-height: 550px;
+    padding-bottom: 1%;
+    margin: 8% auto;
+    text-align: center;
+    background-color: #B095C7;
+}
+
+.homecard a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.homecard .container {
     padding: 0 16px;
 }
 
 .title {
     color: grey;
     font-size: 18px;
-}
-
-.card a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
 }
 
 .fa{
@@ -70,4 +113,14 @@ nav li{
 button{
     padding-left: 10%;
     display: inline-block;
+}
+
+.btn.btn-primary{
+    background-color: #888;
+    border: solid 1px #666 !important;
+    box-shadow: 2px 2px 0px 2px #999;
+}
+
+.btn.btn-primary:hover{
+    background-color: #555;
 }
