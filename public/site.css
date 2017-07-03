@@ -20,6 +20,10 @@ footer{
     position: fixed;
 }
 
+nav{
+    background-color: #222;
+}
+
 li:hover{
     background-color: #B095C7 !important;
     transition: 0.3s;
@@ -43,47 +47,65 @@ nav li{
     text-align: center;
 }
 
-.card a {
+.card a{
     text-decoration: none;
     font-size: 22px;
     color: black;
 }
 
-.card .container {
+.card .container{
     padding: 0 16px;
 }
 
 #bio{
     text-align: left;
-    margin-left: -10%;
-    margin-right: 20%;
+    /* margin-left: -10%;
+    margin-right: 20%; */
 }
 
-.title {
+.title{
     color: grey;
     font-size: 18px;
 }
 
 .fa{
-    padding: 0% 2% 0% 2%;
+    text-align: center;
+}
+
+.col-md-8 ul{
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.col-md-8 li a{
+    font-size:18px;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.col-md-8 li{
+    float: left;
+    padding: 7%;
+    margin-top: 10%;
 }
 
 .drone.col-md-4{
     padding-bottom: 1.5%;
 }
 
-.bodycontainer{
-    box-sizing: border-box;
-}
-
 .progress{
-    margin-left: -10%;
-    margin-right: 20%;
+    /* margin-left: -10%;
+    margin-right: 20%; */
 }
 
 .skill{
+    padding-left: 1%;
     text-align: left;
-    margin-left: -10%;
+    /* margin-left: -10%; */
 }
 
 .progress-bar{
@@ -102,13 +124,17 @@ nav li{
     height: 18px;
 }
 
-#ting{
-    margin-left: -10%;
+.skill, .percent{
+    width: 49%;
+    display:inline-block;
 }
 
-.skill, .percent{
-    width:45%;
-    display:inline-block;
+#overallspace{
+    padding: 1% 0 1% 0;
+}
+
+.webdev{
+    padding-bottom: 1%;
 }
 
 .hero-image{
@@ -122,4 +148,18 @@ nav li{
 
 .hero-image:hover{
     background-image: url('img/glitch.gif');
+}
+
+body::-webkit-scrollbar{
+    width: 0.4em;
+}
+ 
+ 
+body::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+}
+ 
+body::-webkit-scrollbar-thumb{
+    background-color: #222;
+    outline: 1px solid black; 
 }
