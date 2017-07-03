@@ -87,7 +87,7 @@ nav li{
 }
 
 .progress-bar{
-    background-color: #222;
+    background-color: #333;
 }
 
 .progress{
@@ -109,4 +109,17 @@ nav li{
 .skill, .percent{
     width:45%;
     display:inline-block;
+}
+
+.hero-image{
+    background-image: url('img/glitch.png');
+    height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image:hover{
+    background-image: url('img/glitch.gif');
 }
