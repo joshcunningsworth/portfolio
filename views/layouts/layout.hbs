@@ -15,34 +15,104 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>joshua cunningham</title>
 
-    <link rel="icon" type="image/png" href="img/drone icon.ico" />
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
 
 </head>
 
 <header>
-    <nav class="navbar navbar-inverse" data-spy="affix">
+
+    <!--
+    <nav class="navbar navbar-inverse navbar-fixed-top" data-spy="affix">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="navbar-header">
                         <a class="navbar-brand minilogo"><img src="img/dronegrey.png" style="height: 26px; width: 26px;"></a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
-                    <ul class="nav navbar-nav pull-right">
-                        <li><a href="/">&nbsp;&nbsp;home&nbsp;&nbsp;</a></li>
-                        <li><a href="#c++">&nbsp;&nbsp;&nbsp;c++&nbsp;&nbsp;&nbsp;</a></li>
-                        <li><a href="#web">web dev</a></li>
-                        <li><a href="#java">&nbsp;&nbsp;&nbsp;java&nbsp;&nbsp;&nbsp;</a></li>
-                        <li><a href="#design">design</a></li>
-                        <li><a href="#sql">&nbsp;&nbsp;&nbsp;sql&nbsp;&nbsp;&nbsp;</a></li>
-                    </ul>
+
+                    <div class="nav collapse navbar-collapse">
+                        <ul>
+                            <li id="nav1"><a data-toggle="collapse" data-target=".navbar-collapse.in">home</a></li>
+                            <li id="nav2"><a data-toggle="collapse" data-target=".navbar-collapse.in">c++</a></li>
+                            <li id="nav3"><a data-toggle="collapse" data-target=".navbar-collapse.in">web dev</a></li>
+                            <li id="nav4"><a data-toggle="collapse" data-target=".navbar-collapse.in">java</a></li>
+                            <li id="nav5"><a data-toggle="collapse" data-target=".navbar-collapse.in">design</a></li>
+                            <li id="nav6"><a data-toggle="collapse" data-target=".navbar-collapse.in">sql</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
+    -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand minilogo"><img src="img/dronegrey.png" style="height: 26px; width: 26px;"></a>
+            <!-- <a class="navbar-brand" href="#">Brand</a> -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li id="nav1"><a data-toggle="collapse" data-target=".navbar-collapse.in">home</a></li>
+                <li id="nav2"><a data-toggle="collapse" data-target=".navbar-collapse.in">cpp</a></li>
+                <li id="nav3"><a data-toggle="collapse" data-target=".navbar-collapse.in">web</a></li>
+                <li id="nav4"><a data-toggle="collapse" data-target=".navbar-collapse.in">java</a></li>
+                <li id="nav5"><a data-toggle="collapse" data-target=".navbar-collapse.in">gfx</a></li>
+                <li id="nav6"><a data-toggle="collapse" data-target=".navbar-collapse.in">sql</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
 </header>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar.navbar-inverse.navbar-static-top" data-offset="50">
+
     {{{body}}}
+
+    <script>
+        for (var i = 1; i != 7; i++) {
+            document.getElementById('nav' + i).addEventListener('click', smoothScroll);
+        }
+
+        function smoothScroll(element, to, duration = 600) {
+            var element = document.body;
+            if (this.id == 'nav1') {
+                var to = document.getElementById('home').offsetTop;
+            } else if (this.id == 'nav2') {
+                var to = document.getElementById('cpp').offsetTop;
+            } else if (this.id == 'nav3') {
+                var to = document.getElementById('web').offsetTop;
+            } else if (this.id == 'nav4') {
+                var to = document.getElementById('java').offsetTop;
+            } else if (this.id == 'nav5') {
+                var to = document.getElementById('design').offsetTop;
+            } else if (this.id == 'nav6') {
+                var to = document.getElementById('sql').offsetTop;
+            }
+            if (duration <= 0) return;
+            var difference = to - element.scrollTop;
+            var perTick = difference / duration * 15;
+
+            setTimeout(function () {
+                element.scrollTop = element.scrollTop + perTick;
+                if (element.scrollTop === to) return;
+                smoothScroll(element, to, duration - 15);
+            }, 15);
+        }
+    </script>
 </body>
 
 <footer>
