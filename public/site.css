@@ -214,12 +214,12 @@ body::-webkit-scrollbar-thumb{
     }
 
     .hero-image.gfx{
-        height: 35%;
+        height: 25%;
         width: 100%;
     }
 
     .hero-image.gfx:hover{
-        height: 35%;
+        height: 25%;
         width: 100%;
     }
 }
