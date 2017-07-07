@@ -217,19 +217,11 @@ body::-webkit-scrollbar-thumb{
 
     .hero-image.gfx{
         background-image: url('img/glitchmobile.png');
-        height: 35%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 100%;
     }
 
         .hero-image.gfx:hover{
         background-image: url('img/glitchmobile.png');
-        height: 35%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 100%;
     }
 }
