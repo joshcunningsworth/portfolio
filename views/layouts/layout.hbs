@@ -3,8 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/site.css" type="text/css">
     <link rel="stylesheet" href="/animation.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -62,7 +60,7 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse pull-right">
             <ul class="nav navbar-nav">
                 <li id="nav1"><a data-toggle="collapse" data-target=".navbar-collapse.in">home</a></li>
                 <li id="nav2"><a data-toggle="collapse" data-target=".navbar-collapse.in">cpp</a></li>
@@ -82,36 +80,17 @@
 
     {{{body}}}
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script>
-        for (var i = 1; i != 7; i++) {
-            document.getElementById('nav' + i).addEventListener('click', smoothScroll);
-        }
+        $('.nav>li').on('click', function() {
+            var brahms = (this.id)[this.id.length-1];
 
-        function smoothScroll(element, to, duration = 600) {
-            var element = document.body;
-            if (this.id == 'nav1') {
-                var to = document.getElementById('home').offsetTop;
-            } else if (this.id == 'nav2') {
-                var to = document.getElementById('cpp').offsetTop;
-            } else if (this.id == 'nav3') {
-                var to = document.getElementById('web').offsetTop;
-            } else if (this.id == 'nav4') {
-                var to = document.getElementById('java').offsetTop;
-            } else if (this.id == 'nav5') {
-                var to = document.getElementById('design').offsetTop;
-            } else if (this.id == 'nav6') {
-                var to = document.getElementById('sql').offsetTop;
-            }
-            if (duration <= 0) return;
-            var difference = to - element.scrollTop;
-            var perTick = difference / duration * 15;
-
-            setTimeout(function () {
-                element.scrollTop = element.scrollTop + perTick;
-                if (element.scrollTop === to) return;
-                smoothScroll(element, to, duration - 15);
-            }, 15);
-        }
+            $('html, body').animate({
+                scrollTop: $('.sec'+brahms).offset().top
+            }, 500);
+        });
     </script>
 </body>
 
