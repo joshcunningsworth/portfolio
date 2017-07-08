@@ -23,8 +23,6 @@ body{
     padding: 3%;
 }
 
-
-
 .navbar-collapse.collapse.pull-right{
     margin-right: 2%;
 }
@@ -38,6 +36,13 @@ body{
 .navbar-collapse.collapse.pull-right li:hover{
     background-color: #B095C7 !important;
     transition: 0.3s;
+}
+
+.modal-footer.mycard, .modal-footer.mycard a{
+    text-align: center;
+    color: black;
+    padding: 1% 3%;
+    font-size: 1.5em;
 }
 
 footer{
@@ -82,6 +87,20 @@ nav{
 .title{
     color: grey;
     font-size: 18px;
+}
+
+.col-md-4.me{
+    display: block;
+}
+
+.col-md-4.me{
+    width: 100%;
+    height: 100%;
+}
+
+.col-md-4.me:hover{
+    opacity: 0.6;
+    background-color:#000;
 }
 
 .social span a:hover{
