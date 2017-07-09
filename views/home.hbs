@@ -24,7 +24,6 @@
             <div id="mycard" class="modal fade" role="dialog">
                 <div class="modal-dialog">
 
-                    <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -130,13 +129,12 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3 snippet">
+            <div class="col-md-5 snippet">
                 <img class="img-thumbnail center-block" src="img/gradingapp.png" alt="grading application" data-toggle="modal" data-target="#gradingapp">
 
                 <div id="gradingapp" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
-                        <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -156,22 +154,38 @@
             <div class="col-md-1">
             </div>
 
-            <div class="col-md-8">
-                <h4>Grading Application</h4>Use lambda expression to define an operation on a set of values reads the values
-                from a file and displays them to the user.
+            <div class="col-md-6">
+                <h4>Grading Application</h4>This program uses a lambda expression to define an operation on a set of values then
+                it reads the values from a file and displays them to the user. It takes the student ID and grades from the
+                file and calculates what the student's letter grade would be.</br>
+                </br>For example: if the student has an 80 - 89 in the course their letter grade would be an A, or if they have
+                a 90 - 100 their letter grade would be an A+. This application would be useful for calculating student grades
+                and averages. It's also practical for parsing through files and outputting the data. An example of the program
+                reading the data from a file and outputing would look similar to the example below.</br>
+                </br>
+                <pre>
+                    Data in file being read:
+                    <i>1024576 59.37
+                    1243395 94
+                    1269780 73.8</i>
+
+                    Output from the program:
+                    1024576 59.37 D+
+                    1243395 94.00 A+
+                    1269780 73.80 B+
+                </pre>
             </div>
         </div>
 
         <hr style="margin: 5% 0 5% 0;">
 
         <div class="row">
-            <div class="col-md-3 snippet">
+            <div class="col-md-5 snippet">
                 <img class="img-thumbnail center-block" src="img/receiptapp.png" alt="receipt application" data-toggle="modal" data-target="#receiptapp">
 
                 <div id="receiptapp" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
-                        <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -191,10 +205,80 @@
             <div class="col-md-1">
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <h4>Receipt Application</h4>This program will accept a number of receipts the user enters, the name of the store
-                and the number of items purchased. The user will then enter the price of the items. The results will be displayed
-                to the user.
+                that particular receipt is from and the number of items purchased at that store. The user will then enter
+                the price of the items purchased. The results will be calculated and displayed to the user.</br>
+                </br>This application can be used for entering multiple receipts at a time for tax purposes. An example of the
+                inputs in italics and the calculated outputs are shown below.</br>
+                </br>
+                <pre>
+                    Number of Receipts: <i>1</i>
+                    Name of store: <i>CunninghamConvenience</i>
+                    Number of items: <i>2</i>
+
+                    Prices: 
+                    Item 1: <i>5.67</i>
+                    Item 2: <i>3.99</i>
+
+                    +-- Results --+
+                    CunninghamConvenience
+                    5.67
+                    3.99
+                    Total: 9.66
+                </pre>
+            </div>
+        </div>
+
+        <hr style="margin: 5% 0 5% 0;">
+
+        <div class="row">
+            <div class="col-md-5 snippet">
+                <img class="img-thumbnail center-block" src="img/gardenapp.png" alt="garden application" data-toggle="modal" data-target="#gardenapp">
+
+                <div id="gardenapp" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Garden Application</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img class="center-block" src="img/gardenapp.png" alt="garden application">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">***github link coming soon***</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-6">
+                <h4>Garden Application</h4>This program will allow a user to virtually plan a garden. They can enter the size
+                of the garden and where they want crops/plants to be planted. It will accept a character symbol that represents
+                the crop/plant in the garden.</br>
+                </br>For example: 'c' could symbolize carrots and the user could decide to enter 'w' as a new crop of wheat, assuming
+                no other crops were using that character because each crop requires a unique symbol that cannot be shared.
+                The user can add crops to their garden setup and view what has already been planted. The view of the garden
+                is output in a text based grid with crops inside that looks similar to the grid below.</br>
+                </br>
+                <pre>
+                    +--------------------+
+                    |            wwww    |
+                    |     cc     wwww    |
+                    |     cc             |
+                    |     cc          cc |
+                    | cc              cc |
+                    | cc      wwww    cc |
+                    | cc      wwww       |
+                    |                    |
+                    +--------------------+
+                </pre>
             </div>
         </div>
     </div>
@@ -222,10 +306,10 @@
                 </div>
 
                 <div class="col-md-6">
-                    <h4>Climate King Heating &amp; Air Inc.</h4> As a junior full stack developer I worked with a team of other
-                    developers and designers to help the company achieve a clean rebrand on their website.<br/><br/>***Lorem
-                    ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla vel felis at tempus. Sed in justo
-                    augue.***
+                    <h4>Climate King Heating &amp; Air Inc.</h4>Worked on contract for 3 months as a junior full stack developer
+                    I worked with the company and with help from other developers and designers we were able to achieve a
+                    clean rebrand on the Climate King website.<br/><br/>HTML, CSS, and JavaScript were used to develop the
+                    content, style, and functionality of the website.
                 </div>
             </div>
 

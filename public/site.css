@@ -157,18 +157,23 @@ nav{
     padding: 1% 0 1% 0;
 }
 
-.col-md-3.snippet{
+.col-md-5.snippet{
     display: block;
 }
 
-.col-md-3.snippet img{
-    width: 100%;
-    height: 100%;
+.col-md-5.snippet .img-thumbnail{
+    width: 75%;
+    height: 75%;
 }
 
-.col-md-3.snippet .img-thumbnail:hover{
+.col-md-5.snippet .img-thumbnail:hover{
     opacity: 0.6;
     background-color:#000;
+}
+
+.col-md-5.snippet .modal-body img{
+    width: 100%;
+    height: 100%;
 }
 
 .webdev{
@@ -188,21 +193,22 @@ nav{
     background-image: url('img/glitch.gif');
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar, .modal::-webkit-scrollbar{
     width: 0.4em;
 }
  
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track, .modal::-webkit-scrollbar-track{
     box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
     -ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
     -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
 }
- 
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb{
     background-color: #222;
     outline: 1px solid black; 
 }
+
 
 @media (max-width: 990px) {
     .navbar-header {
