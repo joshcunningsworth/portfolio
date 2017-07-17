@@ -130,6 +130,7 @@ nav{
     color: #222;
     padding-left: 1%;
     text-align: left;
+    margin-bottom: -0.25%;
 }
 
 .progress-bar{
@@ -140,8 +141,20 @@ nav{
     height: 5px;
 }
 
-.percent{
+.minexp{
+    padding-left: 1%;
+}
+.maxexp{
     text-align: right;
+}
+
+.minexp, .maxexp{
+    width: 49%;
+    display: inline-block;
+}
+
+.yrsexp{
+    margin-left: 1%;
 }
 
 .headings{
@@ -151,16 +164,8 @@ nav{
 }
 
 .progress.overall{
-    height: 18px;
-}
-
-.skill, .percent{
-    width: 49%;
-    display: inline-block;
-}
-
-#overallspace{
-    padding: 1% 0 1% 0;
+    height: 14px;
+    font-size: 0.75em;
 }
 
 .col-md-5.snippet{
