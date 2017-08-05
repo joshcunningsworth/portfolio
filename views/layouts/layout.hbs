@@ -53,17 +53,24 @@
 
     <script>
         $('.nav>li').on('click', function() {
-            var brahms = (this.id)[this.id.length-1];
+            var navscroll = (this.id)[this.id.length-1];
 
             $('html, body').animate({
-                scrollTop: $('.sec'+brahms).offset().top - 40
+                scrollTop: $('.sec'+navscroll).offset().top - 40
             }, 500);
         });
     </script>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- <a href="https://github.com/"> YA! </a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
-
-<footer>
-
-</footer>
 
 </html>
