@@ -14,7 +14,7 @@ app.engine(".hbs", exphbs({
 app.set("view engine", ".hbs");
 
 function onhttpstart() {
-    console.log("It's listening on " + HTTP_PORT);
+    console.log("listening on " + HTTP_PORT);
 }
 
 app.get('/', function(req, res){
