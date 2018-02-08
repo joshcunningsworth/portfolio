@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>joshua cunningham</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/site.css" type="text/css">
+    <link rel="stylesheet" href="/animation.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+
+</head>
+
+<header>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand minilogo"><img src="img/dronegrey.png" style="height: 26px; width: 26px;"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse pull-right">
+            <ul class="nav navbar-nav">
+                <li id="nav1"><a data-toggle="collapse" data-target=".navbar-collapse.in">home</a></li>
+                <li id="nav2"><a data-toggle="collapse" data-target=".navbar-collapse.in">c++</a></li>
+                <li id="nav3"><a data-toggle="collapse" data-target=".navbar-collapse.in">web</a></li>
+                <li id="nav4"><a data-toggle="collapse" data-target=".navbar-collapse.in">java</a></li>
+                <li id="nav5"><a data-toggle="collapse" data-target=".navbar-collapse.in">gfx</a></li>
+                <li id="nav6"><a data-toggle="collapse" data-target=".navbar-collapse.in">sql</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<body data-spy="scroll" data-target=".navbar.navbar-inverse.navbar-static-top" data-offset="50">
+
+    <div class="anim">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="color: black;">
+                    <img src="img/me3.png" style="height: 100%; width: 100%; margin-bottom: -10%;">
+                    <h3 class="page-header">Joshua Cunningham</h3>
+                    <strong>Programmer / Graphic Designer</strong>
+                    <p>Seneca College Computer Programming &amp; Analysis</p>
+                    <a href="https://www.github.com/joshcunningsworth"><i class="fa fa-github"></i></a>
+                    <a href="mailto:joshcunningsworth@gmail.com"><i class="fa fa-google"></i></a>
+                    <a href="https://www.linkedin.com/in/joshcunningsworth"><i class="fa fa-linkedin"></i></a>
+                    <a href="skype:joshcunningsworth?userinfo"><i class="fa fa-skype"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.nav>li').on('click', function() {
+            var navscroll = (this.id)[this.id.length-1];
+
+            $('html, body').animate({
+                scrollTop: $('.sec'+navscroll).offset().top - 40
+            }, 500);
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- <a href="https://github.com/"> YA! </a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
