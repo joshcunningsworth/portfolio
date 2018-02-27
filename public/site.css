@@ -12,6 +12,10 @@ body,html{
     /*background-color: #B095C7; lilac, purple */
 }
 
+.fa-github, .fa-github:hover{
+    text-decoration: none;
+    color: black;
+}
 body{
 	color: black;
     position: relative;
@@ -43,11 +47,6 @@ body{
     color: black;
     padding: 1% 3%;
     font-size: 1.5em;
-}
-
-footer{
-    float: bottom;
-    position: fixed;
 }
 
 nav{
@@ -252,6 +251,14 @@ footer{
     left: 0;
     background-color: #222;
     padding: 1rem;
+}
+
+.sec6{
+    padding-bottom: 30%;
+}
+
+.sec7{
+    background-color: #222;
 }
 
 @media (max-width: 990px) {
