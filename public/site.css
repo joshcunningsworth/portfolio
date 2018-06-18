@@ -8,8 +8,9 @@ body,html{
     padding: 0px;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
+    color: black;
     background-color: white;
-    /*background-color: #B095C7; lilac, purple */
+    /*#B095C7; lilac, purple */
 }
 
 .fa-github, .fa-github:hover{
@@ -17,7 +18,6 @@ body,html{
     color: black;
 }
 body{
-	color: black;
     position: relative;
 }
 
@@ -186,6 +186,25 @@ nav{
     height: 100%;
 }
 
+a h4{
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+a, a:hover{
+    color: black;
+    text-decoration: none
+}
+
+.carousel-caption{
+    color: black;
+}
+
+.carousel-caption a:hover{
+    color: white;
+}
+
 .webdev{
     padding-bottom: 1%;
 }
@@ -214,9 +233,9 @@ nav{
     overflow-y: scroll;
 }
 
-.modal-dialog.modalgrid{
-    width: 99%;
-    height: 99%;
+.modal-content{
+    width: 100%;
+    height: 100%;
 }
 
 body::-webkit-scrollbar, .modal::-webkit-scrollbar{
@@ -259,6 +278,7 @@ footer{
 
 .sec7{
     background-color: #222;
+    padding-top: 5%;
 }
 
 @media (max-width: 990px) {

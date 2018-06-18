@@ -151,7 +151,8 @@
 		-webkit-transform: scale(1);
 		opacity: 1;	
 	}
-    
+}
+
 @-moz-keyframes bounce {
 	0% {
 		-moz-transform: scale(0);
@@ -168,6 +169,7 @@
 		-moz-transform: scale(1);
 		opacity: 1;	
 	}
+}
  
 @-ms-keyframes bounce {
 	0% {
