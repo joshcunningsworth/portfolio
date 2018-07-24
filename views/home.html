@@ -218,15 +218,15 @@
                 reading the data from a file and outputing would look similar to the example below.<br>
                 <br>
                 <pre><code>
-            Data in file being read:
-            <i>1024576 51.37
-            1243395 94
-            1269780 73.8</i>
+        Data in file being read:
+        <i>1024576 51.37
+        1243395 94
+        1269780 73.8</i>
 
-            Output from the program:
-            1024576 51.37 D
-            1243395 94.00 A+
-            1269780 73.80 B
+        Output from the program:
+        1024576 51.37 D
+        1243395 94.00 A+
+        1269780 73.80 B
                 </code></pre>
             </div>
         </div>
@@ -269,19 +269,19 @@
                 outputs is shown below, with the user's inputs in italics.<br>
                 <br>
                 <pre><code>
-            Number of Receipts: <i>1</i>
-            Name of store: <i>CunninghamConvenience</i>
-            Number of items: <i>2</i>
+        Number of Receipts: <i>1</i>
+        Name of store: <i>CunninghamConvenience</i>
+        Number of items: <i>2</i>
 
-            Prices: 
-            Item 1: <i>5.67</i>
-            Item 2: <i>3.99</i>
+        Prices: 
+        Item 1: <i>5.67</i>
+        Item 2: <i>3.99</i>
 
-            +--- Results ---+
-            CunninghamConvenience
-            5.67
-            3.99
-            Total: 9.66
+        +--- Results ---+
+        CunninghamConvenience
+        5.67
+        3.99
+        Total: 9.66
                 </code></pre>
             </div>
         </div>
@@ -326,16 +326,16 @@
                 is output in a text based grid with crops inside that looks similar to the grid below.<br>
                 <br>
                 <pre><code>
-            +------------------------+
-            |               wwww     |
-            |      cc       wwww     |
-            |      cc                |
-            |      cc             cc |
-            | cc                  cc |
-            | cc        wwww      cc |
-            | cc        wwww         |
-            |                        |
-            +------------------------+
+        +------------------------+
+        |               wwww     |
+        |      cc       wwww     |
+        |      cc                |
+        |      cc             cc |
+        | cc                  cc |
+        | cc        wwww      cc |
+        | cc        wwww         |
+        |                        |
+        +------------------------+
                 </code></pre>
             </div>
         </div>
@@ -487,9 +487,11 @@
 
         <div class="col-md-8">
             <p>These are a few snippets of my graphic design work using various software.
-                My main tools are Adobe Creative Suite 6: Photoshop, After Effects, and Illustrator.
+                My main tools are Adobe Creative Suite 6 or Creative Cloud. in particular Photoshop, After Effects,
+                and occasionally Illustrator.
                 I also have 3D modelling experience using Cinema4D and 3DS Max.
-                All software mentioned has been both studied through coursework and self instructed.
+                All software mentioned has been studied through coursework, used in workplace environments and
+                self instructed.
             </p>
         </div>
 
@@ -736,22 +738,27 @@
     <div class="col-md-7">
             <a target="_blank" href="https://drive.google.com/open?id=0B5b4lzZ_8swkdWIzaW9PREtJYW8"><h4>SQL Samples <i class="fa fa-google"></i></h4></a>
         
-        I've uploaded a few sample SQL scripts to Google Drive if you're interested in seeing them<br>
-        <br>***For example: if the student has an 80 - 89 in the course their letter grade would be an A, or if they have
-        a 90 - 100 their letter grade would be an A+. This application would be useful for calculating student grades
-        and averages. It's also practical for parsing through files and outputting the data. An example of the program
-        reading the data from a file and outputing would look similar to the example below.***<br><br>
+        I've uploaded a few sample SQL scripts to Google Drive if you're interested in seeing them.<br>
+        <br><br><br>
 
         <pre><code>
             Select statement being ran:
-            <i>SELECT * FROM example
-            WHERE this_is_a_test = TRUE;
-            </i>
-
+            <i>SELECT department_id, MAX(hire_date) AS "Latest",
+            MIN(hire_date) AS "Earliest"
+            FROM employees
+            WHERE department_id != 10 AND department_id != 20
+            AND hire_date < '01-JAN-2000'
+            GROUP BY department_id
+            ORDER BY "Latest" DESC</i>
+                
             Output from the script:
-            Some example records.. 
-            This is just a test example
-            I'll post an actual one soon. 
+            DEPARTMENT_ID   Latest      Earliest
+            --------------- ----------- -----------
+            50              16-NOV-99   17-OCT-95
+            60              07-FEB-99   03-JAN-90
+            80              24-MAR-98   11-MAY-96
+            110             07-JUN-94   07-JUN-94
+            90              13-JAN-93   17-JUN-87
         </code></pre>
     </div>
     <br><br>
