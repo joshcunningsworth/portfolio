@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="calcTool">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../calctool/calculator.css">
+	<script type="text/javascript" src="../calctool/angular.min.js"></script>
+	<script type="text/javascript" src="../calctool/calculator.js"></script>
+
+	<title>Energy CalcTool.</title>
+</head>
+<body>
+	
+	<div class="navbar">
+		<h1>Energy CalcTool .</h1>
+		<p>Designed for calculating the cost of different kinds of lightbulbs.</p>
+	</div>
+
+	<div id="calcTool" ng-controller="CalculatorController">
+		<main>
+			<section class="inc">
+				<div>
+					<h4>Incandescent</h4>
+					<p>{{inc_wattage}}</p>
+					<p>{{inc_cost}}</p>
+				</div>
+			</section>
+
+			<section class="hal">
+				<div>
+					<h4>Halogen</h4>
+					<p>{{hal_wattage}}</p>
+					<p>{{hal_cost}}</p>
+				</div>
+			</section>
+
+			<section class="cfl">
+				<div>
+					<h4>CFL</h4>
+					<p>{{cfl_wattage}}</p>
+					<p>{{cfl_cost}}</p>
+				</div>
+			</section>
+
+			<section class="led">
+				<div>
+					<h4>LED</h4>
+					<p>{{led_wattage}}</p>
+					<p>{{led_cost}}</p>
+				</div>	
+			</section>
+		</main>
+
+		<form>
+			<div>
+				<h4>Lumens</h4>
+				<p>Brightness <br>of bulb</p>
+				<!-- looping through the options in the lumens array    -->
+				<select ng-change="calculate()" ng-model="lumens_selected"
+				ng-options="o as o for o in lumens_options">
+				</select>
+			</div>
+
+			<div>
+				<h4>kWh</h4>
+				<p>Kilowatt-<br>hour cost*</p>
+				
+				<!-- planning to embed the cents sign within the input field. -->
+				<!-- <span class="currencyinput">¢<input type="text" name="currency"></span> -->
+				
+				¢ <input type="number" ng-change="calculate()" ng-model="cost_selected"
+				value="cost_selected{{cost_selected}}">
+			</div>
+
+			<div>
+				<h4>Hours</h4>
+				<p>Usage <br>per day</p>
+				<input type="number" ng-change="calculate()" ng-model="hours_selected"
+				value="hours_selected{{hours_selected }}">
+			</div>
+
+			<div>
+				<h4># of Bulbs</h4>
+				<p>Total<br> lightbulbs</p>
+				<input type="number" ng-change="calculate()" ng-model="number_selected"
+				value="number_selected{{number_selected }}">
+			</div>
+		</form>
+		
+		<div id="instructions">
+			<h4>Instructions: </h4>
+			
+			<p>1. Select the brightness of your bulb in Lumens from the menu.
+				<br>2. Input the Kilowatt-hour cost provided by your power company.
+				<br>3. Input the estimated hours the bulb will be used per day.
+				<br>4. Select how many lightbulbs of that same type are being used.
+				<br>5. View the results for 4 different types of lightbulbs above.
+			</p>			
+		</div>
+
+		<div id="fineprint">
+				*Cost per Kilowatt-hour should be provided by your power/utility company.
+		</div>
+	</div>
+
+</body>
+</html>
