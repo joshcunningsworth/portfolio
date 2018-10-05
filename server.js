@@ -12,15 +12,15 @@ function onhttpstart() {
 }
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, "../views/home.html"));
+    res.sendFile(path.join(__dirname, "views/home.html"));
 });
 
 app.get('/about', function(req, res){
-    res.sendFile(path.join(__dirname, "../views/about.html"));
+    res.sendFile(path.join(__dirname, "views/about.html"));
 });
 
 app.get('/calctool', function(req, res){
-    res.sendFile(path.join(__dirname, "../views/calctool.html"));
+    res.sendFile(path.join(__dirname, "views/calctool.html"));
 });
 
 app.listen(HTTP_PORT, onhttpstart);

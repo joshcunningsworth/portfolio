@@ -12,4 +12,4 @@ let bomba = ['https://www.lynda.com/home/CertificateOfCompletion/PrintCertificat
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("yo");
-})
+});
