@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 let bomba = ['https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=FD5272DE24BD4D04AB21B8C4EEB8CF36',
     'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=8FA459D41262481F9FFE4DC13AED1CD6',
     'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=33338FC7E8CE436E9E8156A7D097DD11',
@@ -11,5 +13,4 @@ let bomba = ['https://www.lynda.com/home/CertificateOfCompletion/PrintCertificat
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("yo");
 });
