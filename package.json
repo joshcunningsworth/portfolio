@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "online portfolio",
   "main": "server.js",
   "scripts": {
@@ -11,5 +11,18 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshcunningsworth/portfolio.git"
+  },
+  "keywords": [
+    "web",
+    "development"
+  ],
+  "bugs": {
+    "url": "https://github.com/joshcunningsworth/portfolio/issues"
+  },
+  "homepage": "https://github.com/joshcunningsworth/portfolio#readme"
 }

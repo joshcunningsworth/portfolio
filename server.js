@@ -23,4 +23,8 @@ app.get('/calctool', function(req, res){
     res.sendFile(path.join(__dirname, "views/calctool.html"));
 });
 
+app.get('/saturnquiz', function(req, res){
+    res.sendFile(path.join(__dirname, "views/saturnquiz.html"));
+});
+
 app.listen(HTTP_PORT, onhttpstart);
