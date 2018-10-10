@@ -110,7 +110,6 @@
 
 #calcTool main p::after{
     content: 'w';
-    
 }
 
 #calcTool main p + p::before{
@@ -178,7 +177,7 @@
     -o-appearance: none;
     appearance: none;
     color: black;
-    background: #fff url(images/icons_arrows.svg) no-repeat right 1px top 6px;
+    background: #fff url(images/icons_arrows.svg) no-repeat right 1px top 7px;
     background-size: 30px 20px;
     padding: 3px 30px 3px 5px;
 }
@@ -214,6 +213,23 @@
     font-size: .6em;
     font-weight: bold;
     padding: 0 10px;
+}
+
+#footer{
+    color: #000;
+    background-color: #000;
+    padding: 30px 5%;
+}
+
+#footer a{
+    color: #aaa;
+    background-color: #000;
+    text-align: right;
+}
+
+.githublink{
+    color: #aaa;
+    text-align: right;
 }
 
 /* Beginning of mobile display styles */
