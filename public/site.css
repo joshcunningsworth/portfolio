@@ -127,6 +127,7 @@ nav{
 }
 
 .weblinks span{
+    margin: 0 3%;
     font-size: 1.2em;
     padding: 2%;
     font-weight: bold;
@@ -135,8 +136,13 @@ nav{
     text-decoration: none;
 }
 
-.weblinks span a{
+.weblinks a span{
+    margin-top: 3%;
     display: inline-block;
+}
+
+h4{
+    font-weight: bold;
 }
 
 .drone.col-md-4{
@@ -288,6 +294,10 @@ footer{
     left: 0;
     background-color: #222;
     padding: 1rem;
+}
+
+.sec4, .sec6{
+    background-color: #f0f0f0;
 }
 
 .sec6{
