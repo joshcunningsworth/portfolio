@@ -102,13 +102,13 @@ nav{
     background-color:#000;
 }
 
+.social, .weblinks{
+    text-align: center;
+}
+
 .social span a:hover{
     background-color: #B095C7 !important;
     transition: 0.3s;
-}
-
-.social{
-    text-align: center;
 }
 
 .social span a{
@@ -119,6 +119,24 @@ nav{
     text-decoration: none;
     margin-top: 3%;
     padding: 5%;
+}
+
+.weblinks span:hover{
+    background-color: #B095C7 !important;
+    transition: 0.3s;
+}
+
+.weblinks span{
+    font-size: 1.2em;
+    padding: 2%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.weblinks span a{
+    display: inline-block;
 }
 
 .drone.col-md-4{
